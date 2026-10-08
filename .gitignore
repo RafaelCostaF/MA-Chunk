@@ -1,0 +1,22 @@
+# secrets and local state
+.env
+.cache/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# outputs (regenerate or download the results archive, see docs/REPRODUCE.md)
+results/*
+!results/README.md
+
+# large data files are versioned as parts (python scripts/data/split_join.py join)
+data/crag/crag_sample.parquet
+data/musique/candidates.parquet
+
+# LaTeX build files
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.bbl
+paper/*.blg
+paper/figs/*.png

@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ma-chunk"
+version = "1.0.0"
+description = "MA-Chunk: cost-aware multi-agent reinforcement learning for RAG context curation"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+
+[tool.setuptools]
+packages = ["ma_chunk"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
